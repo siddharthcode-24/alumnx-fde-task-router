@@ -36,6 +36,22 @@ app.add_middleware(
 init_db()
 
 
+@app.get("/")
+def root_health_check():
+    return {
+        "status": "online",
+        "service": "Sales Inbox Task Router API",
+        "candidate_id": "priya.sharma@gmail.com",
+        "docs": "/docs",
+        "endpoints": {
+            "users": "/users",
+            "tasks": "/tasks?candidate_id=priya.sharma@gmail.com",
+            "ingest": "POST /ingest",
+            "chat": "POST /api/chat"
+        }
+    }
+
+
 def validate_task_enums(data: dict):
     if "assignee_id" in data and data["assignee_id"] is not None:
         if data["assignee_id"] not in ALLOWED_ASSIGNEES:
