@@ -3,7 +3,7 @@
 **candidate_id**: `priya.sharma@gmail.com`  
 **Deployed Backend URL**: `https://sales-router-backend.onrender.com`  
 **Deployed Frontend URL**: `https://sales-router-frontend.vercel.app`  
-**GitHub Repository**: `https://github.com/priyasharma/sales-task-router`
+**GitHub Repository**: `https://github.com/siddharthcode-24/alumnx-fde-task-router.git`
 
 ---
 
